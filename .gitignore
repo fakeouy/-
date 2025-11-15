@@ -1,0 +1,265 @@
+-- Forsaken
+
+local Translations = {["输入卡密"] = "卡密syruppy",
+    ["Generators"] = "发电机",
+    ["Player"] = "玩家",
+    ["Misc"] = "杂项",
+    ["Rage"] = "狂暴",
+    ["Aiming"] = "瞄准",
+    ["Autoblock"] = "自动格挡",
+    ["Music"] = "音乐",
+    ["UI Settings"] = "界面设置",
+    ["I'm not cheating bro"] = "我没开",
+    ["Executor"] = "注入器",
+    ["You used the script"] = "你已使用脚本",
+    ["Support Server"] = "支持服务器",
+    ["Information"] = "信息",
+    ["Fartsaken"] = "Fartsaken(XQ汉化)",
+    ["Script is updated"] = "脚本已更新",
+    ["Developers"] = "开发者",
+    ["Contributors"] = "贡献者",
+    ["Settings"] = "设置",
+    ["ESP"] = "透视",
+本地成功，err=pcall（function（））
+local oldIndex = getrawmetatable(game).__newindex
+setreadonly（getrawmetatable（游戏），false）
+getrawmetatable（游戏）.__newindex=newcclosure（函数（t，k，v）
+如果（T:IsA（“TextLabel”）或T:IsA（“TextButton”）或T:IsA（“TextBox”））和k===“Text”，那么
+v = translateText(tostring(v))
+结束
+申报表（t，k，v）
+setreadonly(getrawmetatable(game), true)
+如果不成功
+warn（“元表劫持失败：”，err）
+本地翻译={}
+本地函数 scanAndTranslate（）
+对于_，ipairs mayor Gui（游戏：GetService(“CoreGui”)：getprodures（））
+如果（gui:IsA(“TextLabel”)mayou:IsA(“TextButton”)gui:IsA(“TextBox”)
+local text = gui.Text
+如果文本和文本~=""那么
+local translatedText = translateText(text)
+如果 translatedText~=
+gui.Text = translatedText
+翻译[gui]=true
+结束
+结束
+结束
+结束
+本地玩家 = 游戏：获取服务（“玩家”）.本地玩家
+如果玩家和玩家：FindFirstChild（“PlayerGui”）
+对于_，ipairs mayor Gui（Player.PlayerGui:getprodures（））
+如果（gui:IsA(“TextLabel”)mayou:IsA(“TextButton”)gui:IsA(“TextBox”)
+local text = gui.Text
+如果文本和文本~=""那么
+    ["Arrow Radius"] = "箭头半径",
+    ["Names"] = "名字",
+    ["Text Size"] = "文本大小",
+    ["Text Font"] = "文本字体",
+    ["Healthy"] = "健康",
+    ["Dying"] = "濒死",
+    ["Health Bars"] = "生命条",
+    ["Boxes"] = "碰撞箱",
+    ["Auto Solve Generators and other generator stuff."] = "自动修机和其它发电机功能",
+    ["Auto Generator"] = "自动修机",
+    ["Auto Solve Generator"] = "自动修机",
+如果translatedText~=Text那么
+gui.Text = translatedText
+翻译[gui]=true
+结束
+结束
+结束
+结束
+本地玩家 = 游戏：获取服务（“玩家”）.本地玩家
+如果玩家和玩家：FindFirstChild（“PlayerGui”）
+对于_，ipairs中的Gui（Player.PlayerGui:getprodures（））做
+如果（gui:IsA（“TextLabel”）或gui:IsA（“TextButton”）或gui:IsA（“TextBox”）没有翻译[gui]，那么
+local text = gui.Text
+如果文本和文本~=""那么
+local translatedText = translateText(text)
+如果 translatedText~=
+gui.Text = translatedText
+翻译[gui]=true
+local text = gui.Text
+如果文本和文本~=""那么
+local translatedText = translateText(text)
+如果 translatedText~=
+gui.Text = translatedText
+    ["Note: Stamina changes apply after round ends"] = "注意：耐力更改将在回合结束后生效",
+    ["Infinite Stamina"] = "无限体力",
+    ["Stamina Gain Speed"] = "体力恢复速度",
+    ["Max Stamina"] = "最大体力",
+    ["Invisibility"] = "隐身",
+    ["Better Noli Controls"] = "Noli开车无转弯限制",
+    ["Miscellaneous functions and utilities."] = "杂项功能和实用工具",
+    ["General"] = "通用",
+    ["Streamer Mode"] = "主播模式",
+    ["Show Hidden Stats"] = "显示隐藏属性",
+    ["Delete Killer Only Walls"] = "删除仅杀手可通过的墙",
+    ["Visibility"] = "可见性",
+    ["Toggle Chat Visibility"] = "聊天可见",
+    ["Anti Features"] = "反特性",
+    ["Anti Auto 404"] = "反自动404",
+    ["Anti Autoblock"] = "反自动格挡",
+    ["Device"] = "设备",
+    ["Spoof Device"] = "伪装设备",
+    ["TopBar Buttons"] = "顶部栏按钮",
+    ["Fake Block"] = "假格挡",
+    ["Misc Rage Functions"] = "杂项狂暴功能",
+    ["Auto Screen Popups"] = "自动点弹窗",
+    ["Anti Reach"] = "防范围攻击",
+    ["Shedletsky Fling Sword"] = "谢德飞剑",
+    ["Reach"] = "攻击范围",
+    ["Reach Characters"] = "启用攻击范围的角色",
+    [" Prediction"] = "预测",
+    ["Strength"] = "强度",
+    [" Delay"] = "延迟",
+    ["Aimbot and aiming assistance features"] = "自瞄及辅助瞄准",
+    ["Aimbot"] = "自瞄",
+    ["TwoTime Look Same Direction"] = "两次看同一方向",
+    ["Aimbot Characters"] = "自动瞄准角色",
+    ["Silent Aim"] = "静默瞄准",
+    ["Silent Aim Characters"] = "静默瞄准角色",
+    ["Aimbot Priority"] = "自瞄优先级",
+    ["Priority"] = "优先级",
+    ["Nearest"] = "最近目标",
+    ["Closest To Cursor"] = "最接近光标",
+    ["FOV Circle Radius"] = "自瞄圈圈",
+    ["FOV Circle Transparency"] = "自瞄圈圈透明度",
+    ["FOV Circle Color"] = "自瞄圈圈颜色",
+    ["Aimbot Prediction"] = "预判自瞄",
+    ["Aimbot Rotation Speed"] = "自瞄速度",
+    ["Aimbot Max Distance"] = "自瞄最远距离",
+    ["Studs"] = "格",
+    ["This will change how aimbot selects targets, inside the circle or the closest to you."] = "这将改变自动瞄准选择目标的方式，在圆圈内或离你最近的目标。",
+    ["Home"] = "主页",
+    ["Visuals"] = "视觉",
+    ["Aimbot Type"] = "自瞄类型",
+    ["Character Aimbot"] = "角色自瞄",
+    ["Silent Aim Prediction Strength"] = "静默瞄准预测强度",
+    ["Dusekkar Aim Target"] = "南瓜头技能瞄准目标",
+    ["Dusekkar Wallbang"] = "南瓜头穿墙攻击",
+    ["Main"] = "主要",
+    ["Survivor Autoblock"] = "幸存者自动格挡",
+    ["Block Projectiles"] = "格挡远程攻击",
+    ["Killer Autoblock"] = "杀手自动格挡",
+    ["Config"] = "配置",
+    ["Hitbox"] = "攻击碰撞箱",
+    ["Characters"] = "角色",
+    ["Autoblock Hitbox Multiplier"] = "自动格挡碰撞箱倍数",
+    ["Autoblock Hitbox Transparency"] = "自动格挡命中箱透明度",
+    ["AB Hitbox Color"] = "命中箱颜色",
+    ["Hitbox Preview"] = "命中箱预览",
+    ["Autoblock Characters"] = "自动格挡角色",
+    }
+
+local function translateText(text)
+    if not text or type(text) ~= "string" then return text end
+    
+    if Translations[text] then
+        return Translations[text]
+    end
+    
+    for en, cn in pairs(Translations) do
+        if text:find(en) then
+            return text:gsub(en, cn)
+        end
+    end
+    
+    return text
+end
+
+local function setupTranslationEngine()
+    local success, err = pcall(function()
+        local oldIndex = getrawmetatable(game).__newindex
+        setreadonly(getrawmetatable(game), false)
+        
+        getrawmetatable(game).__newindex = newcclosure(function(t, k, v)
+            if (t:IsA("TextLabel") or t:IsA("TextButton") or t:IsA("TextBox")) and k == "Text" then
+                v = translateText(tostring(v))
+            end
+            return oldIndex(t, k, v)
+        end)
+        
+        setreadonly(getrawmetatable(game), true)
+    end)
+    
+    if not success then
+        warn("元表劫持失败:", err)
+       
+本地翻译={}
+本地函数 scanAndTranslate（）
+对于_，ipairs mayor Gui（游戏：GetService(“CoreGui”)：getprodures（））
+如果（gui:IsA(“TextLabel”)mayou:IsA(“TextButton”)gui:IsA(“TextBox”)
+                    pcall(function()
+local text = gui.Text
+如果文本和文本~=""那么
+local translatedText = translateText(text)
+如果 translatedText~=
+gui.Text = translatedText
+翻译[gui]=true
+结束
+结束
+                    end)
+结束
+结束
+            
+本地玩家 = 游戏：获取服务（“玩家”）.本地玩家
+如果玩家和玩家：FindFirstChild（“PlayerGui”）
+对于_，ipairs mayor Gui（Player.PlayerGui:getprodures（））
+如果（gui:IsA（“TextLabel”）mayou:IsA（“TextButton”）gui:IsA（“TextBox”）
+                        pcall(function()
+local text = gui.Text
+如果文本和文本~=""那么
+[无限耐力]]=“you you”
+[“耐力获得速度”]=“you you you”
+[“Max light”]=“最大体力”
+[“隐形”]=“隐身”
+[[Better Noli Controls]]=[Noli开车无转弯限制]
+[“杂项函数和实用程序”]=“you you you you”
+[[[General]]=[通用]
+[流光模式]]=“you you”
+[[Show Hidden Stats]]=[显示隐藏属性]
+[“删除杀手专用墙”]=“you you you you”
+-遗忘
+[“切换聊天可视性”]=“聊天可见”，
+本地翻译={[“输入卡密”]=“you you syruppy”，
+[“生成器”]=“发电机”，
+[“Player”]=“玩家”，
+[“Misc”]=“杂项”，
+[“Rage”]=“狂暴”，
+[“瞄准”]=“瞄准”，
+[“Autoblock”]=“自动格挡”，
+[“Music”]=“音乐”，
+[“UI设置”]=“界面设置”，
+[“我没有欺骗兄弟”]=“我没开”，
+[“执行者”]=“注入器”，
+[“您使用了脚本”]=“你已使用脚本”，
+[“Support Server”]=“支持服务器”，
+[“Information”]=“信息”，
+[“Fartsaken”]="Fartsaken(XQ汉化)"，
+[“脚本已更新”]=“脚本已更新”，
+[“Developers”]=“开发者”，
+[“贡献者”]=“贡献者”，
+[“设置”]=“设置”，
+[“ESP”]=“透视”，
+[“Items”]=“物品”，
+[“奴才”]=“小弟”，
+[“projection”]=“空间地雷”，
+[“Traps”]=“绊线钩”，
+setreadonly(getrawmetatable(game), true)
+如果不成功
+warn（[元表劫持失败：]，err）
+本地翻译={}
+本地函数 scanAndTranslate（）
+
+如果（gui:IsA(“TextLabel”)mayou:IsA(“TextButton”)gui:IsA(“TextBox”)
+
+如果文本和文本~=""那么
+
+如果 translatedText~=
+gui.Text = translatedText
+翻译[gui]=true
+
+结束
+结束
+如果玩家和玩家：FindFirstChild（“PlayerGui”）
